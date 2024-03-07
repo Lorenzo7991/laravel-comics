@@ -6,10 +6,16 @@
     <title>{{ env('APP_NAME')}} | @yield('title')</title>
     <link rel="icon" href="{{ Vite::asset('resources/img/favicon.ico')}}" type="img/ico">
     
-    {{-- Import Php  --}}
-    @vite('resources7js7app.js')
+    {{-- Import Vite  --}}
+    @vite('resources\js\app.js')
 </head>
 <body>
-    Home
+   <header>
+   <div class="container">
+    <img src="{{ asset('img/dc-logo.png') }}" alt="dc_logo">
+</div>
+
+
+</header>
 </body>
 </html>
