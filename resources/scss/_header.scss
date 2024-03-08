@@ -5,11 +5,17 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
 
-}
+    img {
+        max-width: 80px;
+    }
 
-#header-menu ul {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    #header-menu ul {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        color: rgb(79, 78, 78);
+    }
 }

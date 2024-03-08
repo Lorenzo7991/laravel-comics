@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', function () {
-    return view('main');
-});
+    $menuItems = ['Characters', 'Comics', 'Movies', 'TV', 'Games', 'Collectibles', 'Videos', 'Fans', 'News', 'Shop'];
+    $menuItems = array_map('strtoupper', $menuItems);
+
+    return view('home', ['menuItems' => $menuItems]);
+})->name('home');
+
