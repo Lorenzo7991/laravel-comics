@@ -11,11 +11,23 @@
 </head>
 <body>
    <header>
-   <div class="container">
-    <img src="{{ asset('img/dc-logo.png') }}" alt="dc_logo">
-</div>
-
-
+        <section id="header-logo">
+            <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="dc_logo">
+        </section>
+        <section id="header-menu">
+            <ul>
+                <li>Characters</li>
+                <li>Comics</li>
+                <li>Movies</li>
+                <li>TV</li>
+                <li>Games</li>
+                <li>Collectibles</li>
+                <li>Videos</li>
+                <li>Fans</li>
+                <li>News</li>
+                <li>Shop</li>
+            </ul>
+        </section>
 </header>
 </body>
 </html>

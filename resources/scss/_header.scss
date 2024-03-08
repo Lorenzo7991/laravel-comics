@@ -1,0 +1,15 @@
+header {
+    height: 100px;
+    border: 2px solid rgb(78, 78, 237);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+
+}
+
+#header-menu ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
