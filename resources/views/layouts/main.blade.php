@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,6 +16,9 @@
 </head>
 <body>
     @include('partials.header', ['menuItems' => $menuItems])
+   <main>
+    <section id="jumbotron"></section>
+   </main>
        
     
 </body>
