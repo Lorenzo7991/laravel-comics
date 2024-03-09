@@ -13,13 +13,8 @@
     @vite('resources\js\app.js')
 </head>
 <body>
-<header>
-        <section id="header-logo">
-            <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="dc_logo">
-        </section>
-        <section id="header-menu">
-            @include('partials.menu', ['menuItems' => $menuItems])
-        </section>
-    </header>
+    @include('partials.header', ['menuItems' => $menuItems])
+       
+    
 </body>
 </html>

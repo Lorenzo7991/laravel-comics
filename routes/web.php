@@ -2,22 +2,57 @@
 
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
+
+
 
 
 Route::get('/', function () {
-    $menuItems = ['Characters', 'Comics', 'Movies', 'TV', 'Games', 'Collectibles', 'Videos', 'Fans', 'News', 'Shop'];
-    $menuItems = array_map('strtoupper', $menuItems);
+    $menuItems = config('navmenulinks.menuItems');
+    return view('comics', ['menuItems' => $menuItems]);
+})->name('comics');
 
-    return view('home', ['menuItems' => $menuItems]);
-})->name('home');
+Route::get('/characters', function () {
+    return 'Characters';
+})->name('characters');
+
+
+Route::get('/movies', function () {
+    return 'Movies';
+
+})->name('movies');
+
+Route::get('/tv', function () {
+    return 'tv';
+
+})->name('tv');
+
+Route::get('/games', function () {
+    return 'games';
+
+})->name('games');
+
+Route::get('/collectibles', function () {
+    return 'collectibles';
+    ;
+})->name('collectibles');
+
+Route::get('/videos', function () {
+    return 'videos';
+
+})->name('videos');
+
+Route::get('/fans', function () {
+    return 'fans';
+
+})->name('fans');
+
+Route::get('/news', function () {
+    return 'news';
+
+})->name('news');
+
+Route::get('/shop', function () {
+    return 'shop';
+
+})->name('shop');
 
